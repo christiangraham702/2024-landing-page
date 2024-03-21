@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { IBM_Plex_Sans } from "next/font/google";
+
+const ibmPlexSans = IBM_Plex_Sans({ subsets: ["latin"], display: "swap", weight: ["400", "500", "600", "700"] });
 
 const inter = Inter({ subsets: ["latin"] });
 

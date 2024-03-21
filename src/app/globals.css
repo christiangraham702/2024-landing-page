@@ -18,16 +18,46 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #eddfdf;
+  /* background-image: linear-gradient(180deg, #00d0ff, #000000);
+  background: hsla(228, 100%, 50%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(228, 100%, 50%, 1) 0%,
+    hsla(228, 100%, 35%, 1) 2%,
+    hsla(228, 100%, 20%, 1) 7%,
+    hsla(0, 0%, 0%, 1) 35%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(228, 100%, 50%, 1) 0%,
+    hsla(228, 100%, 35%, 1) 0%,
+    hsla(228, 100%, 20%, 1) 7%,
+    hsla(0, 0%, 0%, 1) 35%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(228, 100%, 50%, 1) 0%,
+    hsla(228, 100%, 35%, 1) 0%,
+    hsla(228, 100%, 20%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 35%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0033FF", endColorstr="#0024B3", GradientType=1 );
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 100%;
+  /* filter: blur(10px); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+    color: #ffffff;
   }
 }
