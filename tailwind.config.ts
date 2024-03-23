@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        'offset-gray': '4px 6px 0px 0px #5F5F5F',
+        'offset-gray': '6px 6px 0px 0px #242424',
       },
       animation: {
         bounce200: 'bounce 2s infinite',

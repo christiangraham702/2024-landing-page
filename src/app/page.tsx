@@ -1,9 +1,6 @@
-import Image from "next/image";
 import NavBar from "./nav-bar";
-// import HomeContent from "./home-content";
-import ColumnContent from "./column-content";
-import DisplayBox from "../app/components/DisplayBox";
 import LightPage from "./light-page";
+import HomeSection2 from "./home-section2";
 
 export default function Home() {
   return (
@@ -14,6 +11,7 @@ export default function Home() {
       <div className="flex w-screen content-center justify-center">
         <LightPage />
       </div>
+      <HomeSection2 />
     </div>
   );
 }

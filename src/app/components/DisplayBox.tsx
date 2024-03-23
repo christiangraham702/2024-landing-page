@@ -1,18 +1,16 @@
-"use client";
-import { CiLock } from "react-icons/ci";
-import { IconContext } from "react-icons";
+import React from 'react';
 
-export default function DisplayBox() {
+interface DisplayBoxProps {
+  text: string;
+  Icon: JSX.Element; // This allows you to pass in any JSX element, including SVG icons
+  bgColor: string;
+}
+
+export default function DisplayBox({ text, Icon, bgColor }: DisplayBoxProps) {
   return (
-    <>
-      <div className="flex flex-col border-2 border-blue-600 rounded-lg bg-slate-950 al items-center content-center px-10 py-10">
-        {/* <IconContext.Provider value={{ color: "red", size: 80 }} size={40}>
-          <div>
-            <CiLock className="w-4 h-10" />
-          </div>
-        </IconContext.Provider> */}
-        <p className="text-gray-200 ">ted is fucking cool af</p>
-      </div>
-    </>
+    <div className={`flex flex-col border-2 border-black rounded-lg ${bgColor} al items-left content-center px-7 py-10 w-1/2 sm:w-1/5 shadow-offset-gray m-10 text-gray-900 gap-5 ease-in-out hover:translate-x-1 hover:translate-y-1 hover:shadow-none`}>
+      {Icon}
+      <p className="text-gray-900 font-bold text-3xl">{text}</p>
+    </div>
   );
 }

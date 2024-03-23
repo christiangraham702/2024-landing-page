@@ -5,13 +5,13 @@ import Button from "../app/components/Button";
 export default function LightPage() {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex-col flex sm:flex sm:flex-row sm:text-left mt-20 text-center items-center justify-center gap-10 mx-10">
+      <div className="flex flex-col mb-10">
+        <div className="flex-col flex md:flex md:flex-row md:text-left mt-20 text-center items-center justify-center gap-10 sm:gap-20 mx-10">
           <div className="flex flex-col md:w-1/3 gap-3 mr-5">
             <div className="justify-start items-start">
               <Tag color="bg-orange-400" text="AVAILABLE AT UF" />
             </div>
-            <h1 className="text-3xl font-bold mb-3 text-gray-900 sm:text-5xl text-left">
+            <h1 className="text-3xl font-bold mb-3 text-gray-900 md:text-5xl text-left">
               Every group chat, every course{" "}
               <span className="underline"> in one place</span>
             </h1>
@@ -37,8 +37,8 @@ export default function LightPage() {
             />
           </div>
         </div>
-        <div className="flex w-full items-center justify-center ">
-          <button className="flex border-black border-2 text-gray-900 rounded-lg bg-blue-500 px-4 py-2 text-center font-semibold mr-2 shadow-offset-gray animate-bounce200">
+        <div className="flex w-full items-center justify-center mt-7 md:mt-0 mb-10 sm:text-center flex-col gap-10">
+          <button className="flex border-black border-2 text-gray-900 rounded-lg bg-blue-500 px-4 py-2 text-center font-semibold mr-2 shadow-offset-gray ease-in-out hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
             <p className="mt-1">Download</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +47,10 @@ export default function LightPage() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-download"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon icon-tabler icons-tabler-outline icon-tabler-download"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
@@ -61,6 +61,23 @@ export default function LightPage() {
             <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
             {/* </svg> */}
           </button>
+          {/* <div className="animate-bounce200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#3b82f6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-down"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
+            </svg>
+          </div> */}
         </div>
       </div>
     </>
