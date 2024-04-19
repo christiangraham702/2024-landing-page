@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Work_Sans } from "next/font/google";
 
-const ibmPlexSans = IBM_Plex_Sans({ subsets: ["latin"], display: "swap", weight: ["400", "500", "600", "700"] });
+const workSans = Work_Sans({ subsets: ["latin"] });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={workSans.className}>{children}</body>
     </html>
   );
 }

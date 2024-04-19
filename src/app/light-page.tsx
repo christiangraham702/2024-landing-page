@@ -5,40 +5,38 @@ import Button from "../app/components/Button";
 export default function LightPage() {
   return (
     <>
-      <div className="flex flex-col mb-10">
-        <div className="flex-col flex md:flex md:flex-row md:text-left mt-20 text-center items-center justify-center gap-10 sm:gap-20 mx-10">
-          <div className="flex flex-col md:w-1/3 gap-3 mr-5">
-            <div className="justify-start items-start">
+      <div className="flex flex-col md:mb-36 mb-12">
+        <div className="flex-col flex md:flex md:flex-row md:text-left mt-20 text-center items-center justify-center gap-2 md:gap-0 mx-10">
+          <div className="flex flex-col md:w-3/5 gap-2 ">
+            {/* <div className="justify-start items-start">
               <Tag color="bg-orange-400" text="AVAILABLE AT UF" />
-            </div>
-            <h1 className="text-3xl font-bold mb-3 text-gray-900 md:text-5xl text-left">
-              Every group chat, every course{" "}
-              <span className="underline"> in one place</span>
+            </div> */}
+            <h1 className="text-6xl font-bold mb-3 text-gray-900 md:text-7xl text-left tracking-tighter leading-11">
+              Every group chat, every course in one place
             </h1>
-            <p className="text-gray-900 text-left">
+            <p className="text-gray-900 text-left leading-7 max-w-4xl text-lg">
               No more trying to find the Groupme. No more taking your classes
-              all alone. CourseLynx makes it easy to find your{" "}
-              <span className="text-blue-600">classes, clubs, groups</span> so
-              you can connect with your classmates.
+              all alone.
             </p>
-            <div className="flex gap-4">
-              <Tag color="bg-red-500" text="HW Help" />
-              <Tag color="bg-blue-300" text="Study Groups" />
-              <Tag color="bg-green-300" text="Advice" />
+            <div className="flex gap-2 mt-2">
+              <Tag color="bg-uibg" text="HW Help" />
+              <Tag color="bg-uibg" text="Study Groups" />
+              <Tag color="bg-uibg" text="Advice" />
             </div>
           </div>
-          <div className="md:w-1/4 w-1/2 flex justify-center">
+          <div className="md:w-1/4 w-2/5 flex justify-center mb-3">
             <Image
-              src={"/ui-graphic2.png"}
+              src={"/stacked-ui2.png"}
               alt="courselynx ui"
               layout="responsive"
-              width={500}
+              width={700}
               height={500}
+              // className="perspective-500"
             />
           </div>
         </div>
-        <div className="flex w-full items-center justify-center mt-7 md:mt-0 mb-10 sm:text-center flex-col gap-10">
-          <button className="flex border-black border-2 text-gray-900 rounded-lg bg-blue-500 px-4 py-2 text-center font-semibold mr-2 shadow-offset-gray ease-in-out hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+        <div className="flex w-full items-center justify-center mt-7 md:mt-0 mb-5 sm:text-center flex-col gap-10 z-20">
+          <button className="flex border-black border text-gray-900 rounded-lg bg-buttonblue px-4 py-2 text-center font-normal mr-2 shadow-offset-gray ease-in-out hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
             <p className="mt-1">Download</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,23 +59,6 @@ export default function LightPage() {
             <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
             {/* </svg> */}
           </button>
-          {/* <div className="animate-bounce200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#3b82f6"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-down"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M17 13v-6l-5 4l-5 -4v6l5 4z" />
-            </svg>
-          </div> */}
         </div>
       </div>
     </>
